@@ -154,7 +154,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/a67094fc4a99bca08114b.jpg"
+        thumb_name = "https://te.legra.ph/file/2f8b0a508e791cdfce57b.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -239,7 +239,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/a67094fc4a99bca08114b.jpg"
+            thumb_name = "https://te.legra.ph/file/2f8b0a508e791cdfce57b.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -270,7 +270,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**❰ ° 𝐒𝐨𝐧𝐠 🎸 ° ❱ 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 {DURATION_LIMIT} 𝐌𝐢𝐧𝐮𝐭𝐞'𝐒 𝐀𝐫𝐞𝐧'𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 𝐓𝐨 𝐏𝐥𝐚𝐲 ▶ ❤️🥀**"
+                f"**𝙎𝙤𝙣𝙜 𝙞𝙨 𝙇𝙊𝙉𝙂𝙀𝙍 𝙏𝙃𝘼𝙉 {DURATION_LIMIT} 𝙈𝙞𝙣𝙪𝙩𝙚𝙨 𝙖𝙧𝙚𝙣'𝙩 𝙖𝙡𝙡𝙤𝙬𝙚𝙙 𝙩𝙤 𝙥𝙡𝙖𝙮▶ ❤️🥀**"
             )
             return
         requested_by = message.from_user.first_name
@@ -279,9 +279,9 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "✌𝐖𝐡𝐚𝐭'𝐒 𝐓𝐡𝐞 ❤️ 𝐒𝐨𝐧𝐠 🎸 𝐘𝐨𝐮 🎧 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐏𝐥𝐚𝐲 ▶ ❤️**"
+                "𝙒𝙝𝙞𝙘𝙝 𝙨𝙤𝙣𝙜❤️🎶 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙡𝙞𝙨𝙩𝙚𝙣✨✨✨**"
             )
-        await lel.edit("**🎵 𝐌𝐮𝐬𝐢𝐜 🔊 𝐑𝐞𝐚𝐝𝐲 𝐅𝐨𝐫 𝐟𝐮𝐜𝐤 👅 𝐕𝐨𝐢𝐜𝐞 𝐂𝐡𝐚𝐭 🥀**")
+        await lel.edit("**🎵 𝙉𝙊𝙒 𝙋𝙇𝘼𝙔𝙄𝙉𝙂 𝙎𝙊𝙉𝙂𝙎🎶😁 𝙏𝙃𝘼𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙊𝙐𝙍 𝙎𝙀𝙍𝙑𝙄𝘾𝙀....❤️**")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -306,31 +306,32 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**🌸° 𝐒𝐨𝐧𝐠 🎸 𝐍𝐨𝐭 😒 𝐅𝐨𝐮𝐧𝐝 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 ° 🥀.**"
+                "**🌸 (･ัω･ั)𝙎𝙥𝙚𝙡𝙡𝙞𝙣𝙜 𝙥𝙧𝙤𝙗𝙡𝙚𝙢 𝙝𝙖𝙞 𝙖𝙖𝙥 𝙘𝙝𝙚𝙘𝙠 𝙠𝙧 𝙡𝙤 𝙚𝙠 𝙗𝙖𝙖𝙧😚.**"
             )
             print(str(e))
             return
 
         keyboard = InlineKeyboardMarkup(
             [
+                
                 [
                     InlineKeyboardButton(
                             text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
-                            url=f"https://t.me/eSport_BOTs")
+                            url=f"https://t.me/ROYALYSERBOT")
                ],
                [
                     InlineKeyboardButton(
-                            text="𝐒𝐦𝐨𝐊𝐞𝐫 🚬",
-                            url=f"https://t.me/Sanki_Owner"),
+                            text="ᏒᎧᎩᏗᏝᏰᎧᎩ🌟",
+                            url=f"https://t.me/ROYALBOY_XD"),
                             
                     InlineKeyboardButton(
-                            text="𝐅𝐞𝐞𝐋𝐢𝐧𝐠'𝐒 🥀",
-                            url=f"https://t.me/Smoker_Feelings")
+                            text="𝙎𝙐𝙋𝙋𝙊𝙍𝙏✨✨",
+                            url=f"https://t.me/ROYALUBOT_SUPPORT")
                ],
                [
                         InlineKeyboardButton(
-                            text="𝐆𝐫𝐨𝐮𝐩⭐",
-                            url=f"https://t.me/EsportClan")
+                            text="𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍(LEGEND)👨‍💻",
+                            url=f"https://t.me/KartiK_KinG01")
                    
                 ]
             ]
@@ -338,7 +339,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**❰ ° 𝐒𝐨𝐧𝐠 🎸 ° ❱ 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 {DURATION_LIMIT} 𝐌𝐢𝐧𝐮𝐭𝐞'𝐒 𝐀𝐫𝐞𝐧'𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 𝐓𝐨 𝐏𝐥𝐚𝐲 ▶ ❤️🥀**"
+                f"**𝙎𝙤𝙣𝙜 𝙞𝙨 𝙇𝙊𝙉𝙂𝙀𝙍 𝙏𝙃𝘼𝙉 {DURATION_LIMIT} 𝙈𝙞𝙣𝙪𝙩𝙚𝙨 𝙖𝙧𝙚𝙣'𝙩 𝙖𝙡𝙡𝙤𝙬𝙚𝙙 𝙩𝙤 𝙥𝙡𝙖𝙮▶ ❤️🥀**"
             )
             return
         requested_by = message.from_user.first_name
@@ -352,7 +353,7 @@ async def play(_, message: Message):
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="****❰ 𝐌𝐮𝐬𝐢𝐜'𝐗 ❘ 𝐞𝐒𝐩𝐨𝐫𝐭 😈 ❱ 𝐒𝐨𝐧𝐠 ❤️ 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 💫🤟** {}**".format(position),
+            caption="**𝙎𝙊𝙉𝙂 𝙋𝙊𝙎𝙄𝙏𝙄𝙊𝙉 😁** ** {}**".format(position),
             reply_markup=keyboard,
         )
     else:
@@ -369,7 +370,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**❰ 𝐌𝐮𝐬𝐢𝐜'𝐗 ❘ 𝐞𝐒𝐩𝐨𝐫𝐭 😈 ❱ Now 😄 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 📀 𝐀𝐭 🤟 `{}`...**".format(
+            caption="**R͆O͆Y͆A͆L͆-M͆U͆S͆I͆C͆X͆D͆ Now 😄 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 📀 𝐀𝐭 🤟 `{}`...**".format(
         message.chat.title
         ), )
 
