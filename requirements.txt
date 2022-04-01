@@ -1,0 +1,16 @@
+aiohttp
+aiofiles
+asyncio
+git+https://github.com/adityacheats/downloader@master
+pyrogram
+TgCrypto
+py-tgcalls
+python-dotenv
+youtube_search_python
+requests
+youtube_search
+search_engine_parser
+ffmpeg-python
+ffmpeg
+Pillow
+ujson
