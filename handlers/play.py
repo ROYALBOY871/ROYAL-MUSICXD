@@ -99,7 +99,7 @@ async def play(_, message: Message):
     global que
     global useer
 
-    lel = await message.reply("🔎 𝙁𝙄𝙉𝘿𝙄𝙉𝙂 𝙏𝙃𝙀 𝙎𝙊𝙉𝙂 🎸🎶 𝙋𝙇𝙀𝘼𝙎𝙀 𝙒𝘼𝙄𝙏..... 𝙆𝙍 𝙏𝙃𝙊𝘿𝘼𝙎𝘼 😒**")
+    lel = await message.reply("**Song Dhund Rha Hu Bhya Sabar Karo😅**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -119,19 +119,19 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b> ☺️𝘼𝙙𝙙 𝙢𝙚 𝙖𝙨 𝙖𝙙𝙢𝙞𝙣👨‍💻 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥❤️ </b>")
+                        "<b> 🤖Add Me As Admin In Your Group Sir✅ </b>")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "** 𝘾𝙤𝙣𝙜𝙧𝙖𝙩𝙪𝙡𝙖𝙩𝙞𝙤𝙣𝙨 🥳 𝙈𝙐𝙎𝙄𝘾 𝘼𝙎𝙎𝙄𝙎𝙏𝘼𝙉𝙏 𝙅𝙊𝙄𝙉𝙀𝘿 𝙏𝙃𝙄𝙎 𝙂𝙍𝙊𝙐𝙋✨✨🎸**")
+                        message.chat.id, "** 🤨 Svagt Nahi Karoge Music Bot Join Kr Chuka Hai🥺**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b> 𝙁𝙇𝙊𝙊𝘿 𝙀𝙍𝙍𝙊𝙍 😔 𝙋𝙇𝙀𝘼𝙎𝙀 𝙒𝘼𝙄𝙏 𝙈𝙊𝙍𝙀.....❗ </b>\n𝙎𝙤𝙧𝙧𝙮 𝙖𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙛𝙖𝙞𝙡𝙚𝙙 𝙩𝙤 𝙟𝙤𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥😔😔.... 𝙥𝙡𝙚𝙖𝙨𝙚 𝙘𝙝𝙚𝙘𝙠 𝙖𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙣𝙤𝙩 𝙗𝙖𝙣𝙣𝙚𝙙 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥✨✨🎸 :) ")
+                        f"<b> Flood Wait Please Wait More☹️ </b>\n𝙎𝙤𝙧𝙧𝙮 𝙖𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙛𝙖𝙞𝙡𝙚𝙙 𝙩𝙤 𝙟𝙤𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥😔😔.... 𝙥𝙡𝙚𝙖𝙨𝙚 𝙘𝙝𝙚𝙘𝙠 𝙖𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙣𝙤𝙩 𝙗𝙖𝙣𝙣𝙚𝙙 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥✨✨🎸 :) ")
     try:
         await USER.get_chat(chid)
     except:
