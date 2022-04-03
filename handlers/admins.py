@@ -19,7 +19,7 @@ ACTV_CALLS = []
 @authorized_users_only
 async def pause(_, message: Message):
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("▶️😔  𝙋𝙖𝙪𝙨𝙚 🥀😔")
+    await message.reply_text("✅Ｐᴀᴜꜱᴇ")
 
 
 @Client.on_message(aditya(["resume" "/resume", "*resume"]) & other_filters)
@@ -27,7 +27,7 @@ async def pause(_, message: Message):
 @authorized_users_only
 async def resume(_, message: Message):
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("⏸ 𝙍𝙚𝙨𝙪𝙢𝙚🎸 ")
+    await message.reply_text("✅Ｒᴇꜱᴜᴍᴇ ")
 
 
 @Client.on_message(aditya(["end", "/end", "*end"]) & other_filters)
@@ -40,7 +40,7 @@ async def stop(_, message: Message):
         pass
 
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("❗𝙎𝙩𝙤𝙥𝙚𝙙 📳 𝙨𝙩𝙧𝙚𝙖𝙢𝙞𝙣𝙜👨‍💻")
+    await message.reply_text("✔ ꜱᴛᴏᴘᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ")
 
 @Client.on_message(aditya(["skip", "/skip", "*skip"]) & other_filters)
 @errors
@@ -51,7 +51,7 @@ async def skip(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text(" 𝙣𝙤𝙩𝙝𝙞𝙣𝙜 𝙞𝙨 𝙥𝙡𝙖𝙮𝙞𝙣𝙜 😔💢 🥀")
+        await message.reply_text("ɴᴏᴛʜɪɴɢ ɪꜱ ᴘʟᴀʏɪɴɢ")
     else:
         queues.task_done(chat_id)
         
@@ -66,4 +66,5 @@ async def skip(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("❗𝙎𝙠𝙞𝙥 𝙩𝙝𝙚 𝙘𝙪𝙧𝙧𝙚𝙣𝙩 𝙨𝙤𝙣𝙜🎶🙈😁")
+    await message.reply_text("ᴄᴜʀʀᴇɴᴛ ꜱᴏɴɢ ꜱᴋɪᴘ ᴋʀ ᴅɪʏᴀ ʙʜᴀʏᴀ
+😁")
